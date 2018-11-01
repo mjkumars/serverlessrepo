@@ -2,7 +2,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file LambdaCDDemo-master/samTemplate.yaml --s3-bucket caninicfsambucket --output-template-file outputSamTemplate.yaml
+      - aws cloudformation package --template-file LambdaCDDemo-master/samTemplate.yml --s3-bucket caninicfsambucket --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
   files:
